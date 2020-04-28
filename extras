@@ -1,0 +1,35 @@
+const unirest = require("unirest");
+
+var imdb = unirest("GET", "https://movie-database-imdb-alternative.p.rapidapi.com/");
+var imdb = unirest("GET", "https://imdb-internet-movie-database-unofficial.p.rapidapi.com/search/inception");
+
+/*imdb.query({
+        "page": "1",
+        "r": "json",
+        "s": "req.body.search"
+    });
+    imdb.headers({
+        "x-rapidapi-host": "movie-database-imdb-alternative.p.rapidapi.com",
+        "x-rapidapi-key": "49edc59703msh5883bc29407a1b4p15d617jsn60f44a3e5680"
+    });
+    imdb.end(function (res1) {
+        if (res1.error) throw new Error(res1.error);
+
+        console.log(res1.body);
+    });*/
+/*imdb.headers({
+    "x-rapidapi-host": "imdb-internet-movie-database-unofficial.p.rapidapi.com",
+    "x-rapidapi-key": "49edc59703msh5883bc29407a1b4p15d617jsn60f44a3e5680"
+});
+
+
+imdb.end(function (res1) {
+    if (res1.error) throw new Error(res1.error);
+
+    console.log(res1.body.titles[0].title);
+    var Json = JSON.stringify(res1.body);
+    JSON.parse(Json);
+//var data = JSON.parse(res1.body);
+//var title = data.titles.title;
+//console.log(data);
+});*/

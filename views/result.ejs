@@ -1,16 +1,16 @@
 <%- include("header") -%>
 <%- include("navbar") -%>
 
-<div class="container m-5 border border-primary">
+<div class="container m-5">
     <% for(var i in titles){ %>
     <div class="d-flex align-items-center flex-wrap border border-dark m-2 p-2">
-        <div class="phone  d-flex justify-content-center border border-primary"><img src=<%= posters[i]%>
-                class="w-25 border border-danger" alt="" style="width:10%"></div>
-        <div class="text-center phone border border-primary" style="font-size: 22px;
+        <div class="phone  d-flex justify-content-center"><img src=<%= posters[i]%>
+                class="w-25" alt="" style="width:10%"></div>
+        <div class="text-center phone" style="font-size: 22px;
         font-family: 'roboto'; font-weight: bold;">
             <li type="none" class="p-2"> <%= titles[i] %> </li>
         </div>
-        <div class="border border-primary rate"> <button>Rate</button></div>
+        <div class="rate"> <button class="btn btn-primary">Rate</button></div>
     </div>
 
     <%}%>

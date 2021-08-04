@@ -30,14 +30,13 @@ app.get("/result", function (req, res) {
 });
 
 app.post("/", function (req, res) {
-    console.log(req.body.search);
     result_title = [];
     posters = [];
     cli.search({ 'name': req.body.search }).then((search) => {
         for (const result of search.results) {
             result_title.push(result.title);
             posters.push(result.poster);
-            console.log(posters);
+            // console.log(posters);
         }
         res.redirect("result");
     });
